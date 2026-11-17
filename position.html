@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            color: white;
+        }
+        .A {
+            position: relative;
+            width: 200px;
+            height: 400px;
+        }
+        .a {
+            height: 400px;
+            width: 200px;
+            background-color: darkblue;
+            border-radius: 15px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: white;
+            padding-left: 20px;
+            padding-top: 260px;
+        }
+        .b {
+            height: 250px;
+            width: 200px;
+            background-color: blue;
+            position: absolute;
+            border-radius: 15px;
+            padding-left: 20px;
+            padding-top: 10px;
+            color: white;
+            
+
+        }
+        .B {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+        .one {
+            position: relative;
+        }
+        .c {
+            height: 50px;
+            width: 200px;
+            background-color: darkgoldenrod;
+            position: relative;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+
+        }
+        .d {
+            height: 130px;
+            width: 200px;
+            background-color: darkblue;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            z-index: 2;
+            color: white;
+            padding-left: 10px;
+        }
+        .two {
+            position: relative;
+            width: 200px;
+        }
+
+        .e {
+            height: 50px;
+            width: 200px;
+            background-color: lightgreen;
+            position: relative;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+
+
+        }
+        .f {
+            height: 130px;
+            width: 200px;
+            background-color: darkblue;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            z-index: 2;
+            padding-left: 10px;
+
+        }
+        
+        .C {
+            position: relative;
+            width: 200px;
+            height: 400px;
+        }
+        .three {
+            position: relative;
+            height: 200px;
+        }
+        .g {
+            height: 50px;
+            width: 200px;
+            background-color: skyblue;
+            position: relative;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+
+        }
+        .h {
+            height: 130px;
+            width: 200px;
+            background-color: darkblue;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            z-index: 2;
+            padding-left: 10px;
+
+        }
+        .four {
+            position: relative;
+            width: 200px;
+        }
+
+        .i {
+            height: 50px;
+            width: 200px;
+            background-color: violet;
+            position: relative;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+
+
+        }
+        .j {
+            height: 130px;
+            width: 200px;
+            background-color: darkblue;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            z-index: 2;
+            padding-left: 10px;
+
+        }
+         .D {
+            position: relative;
+            width: 200px;
+            height: 400px;
+        }
+        .five {
+            position: relative;
+            height: 200px;
+        }
+        .k {
+            height: 50px;
+            width: 200px;
+            background-color: red;
+            position: relative;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+
+        }
+        .l {
+            height: 130px;
+            width: 200px;
+            background-color: darkblue;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            z-index: 2;
+            padding-left: 10px;
+
+        }
+        .six {
+            position: relative;
+            width: 200px;
+        }
+
+        .m {
+            height: 50px;
+            width: 200px;
+            background-color: yellow;
+            position: relative;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+
+
+        }
+        .n {
+            height: 130px;
+            width: 200px;
+            background-color: darkblue;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            z-index: 2;
+            padding-left: 10px;
+
+        }
+       
+         
+        .z {
+            display: flex;
+            gap: 50px;
+        }
+        .main {
+            display: flex;
+            gap: 25px;
+        }
+        
+        .two {
+            margin-top: 170px;
+        }
+        .four {
+            margin-top: 20px;
+        }
+        .six {
+            margin-top: 20px;
+        }
+        .b img { 
+            width: 80px;
+            height: 80px;
+            border-radius: 50px;
+
+
+        }
+        p {
+            padding-top: -20px;
+        }
+        body {
+            background-color: black
+        }
+        i {
+            padding-left: 120px;
+        }
+
+    
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="A">
+        <div class="a">
+           <h6>Daily</h6>
+           <h5>Weekly</h5>
+           <h6>Month</h6>
+
+        </div>
+        <div class="b">
+             <img src="mrbean.jpg" alt="" height="100px">
+             <h5>Report Time</h5>
+             <h2>Jeremy<br>Robson</h2>
+
+        </div>
+    </div>
+    <div class="z">
+    <div class="B">
+        <div class="one">
+        <div class="c">
+
+        </div>
+        <div class="d">
+            <h5>work <i class="fa-solid fa-ellipsis"></i></h5>
+            <h2>32hrs</h2>
+            <p>Last Week:36hrs</p>
+        </div>
+        </div>
+        <div class="two">
+            <div class="e">
+
+            </div>
+            <div class="f">
+               <h5>Exercise<i class="fa-solid fa-ellipsis"></i></h5>
+               <h2>4hrs</h2>
+               <p>Last Week:5hrs</p>
+            </div>
+        </div>
+    </div>
+     <div class="C">
+        <div class="three">
+        <div class="g">
+
+        </div>
+        <div class="h">
+            <h5>play<i class="fa-solid fa-ellipsis"></i></h5>
+            <h2>10hrs</h2>
+            <p>Last Week:13hrs</p>
+        </div>
+        </div>
+        <div class="four">
+            <div class="i">
+
+            </div>
+            <div class="j">
+              <h5>social<i class="fa-solid fa-ellipsis"></i></h5>
+              <h2>5hrs</h2>
+              <p>Last Week:10hrs</p>
+            </div>
+        </div>
+    </div>
+     <div class="D">
+        <div class="five">
+        <div class="k">
+
+        </div>
+        <div class="l">
+            <h5>study<i class="fa-solid fa-ellipsis"></i></h5>
+            <h2>4hrs</h2>
+            <p>Last Week:7hrs</p>
+        </div>
+        </div>
+        <div class="six">
+            <div class="m">
+
+            </div>
+            <div class="n">
+               <h5>self care <i class="fa-solid fa-ellipsis"></i></h5>
+               <h2>2hrs</h2>
+               <p>Last Week:3hrs</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

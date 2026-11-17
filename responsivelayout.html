@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .a1 {
+            background-color: aqua;
+            color: white;
+            width: 40%;
+            height: 30px;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 15px;
+
+        }
+       
+        .a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+    
+            
+        }
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            width: 100%;
+            
+        }
+        @media (max-width:700px) {
+            .box {
+                flex-direction: column;
+                justify-content: center;
+                 align-items: center;
+
+            }
+            .a1 {
+                background-color:blue ;
+                width:70%;
+            }
+            .a {
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        @media (max-width:400px) {
+            .a1 {
+                background-color: red;
+                width: 90%;
+            }
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="b">
+        <h2>Responsive Layout with Media Queries</h2>
+        </div>
+        <div class="box">
+        <div class="a1">Box 1</div>
+        <div class="a1">Box 2</div>
+        <div class="a1">Box 3</div>
+        <div class="a1">Box 4</div>
+        <div class="a1">Box 5</div>
+        <div class="a1">Box 6</div>
+        </div>
+    </div>
+</body>
+</html>

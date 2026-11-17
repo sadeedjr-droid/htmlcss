@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <style>
+        nav {
+            display: flex;
+            gap: 600px;
+            margin-left: 30px;
+        }
+        .b {
+            margin-top: 10px;
+        }
+        .b ul {
+            display: flex;
+            gap: 30px;
+           
+        }
+        .b ul a{
+            text-decoration: none;
+            color: white;
+        }
+        button {
+            background-color: orange;
+            color: white;
+            height: 30px;
+            margin-top: -10px;
+        }
+        body {
+            background-image: url('steakbaground.jpg');
+            background-repeat:no-repeat ;
+            background-size: cover;
+    
+        }
+        .a h1 {
+            color: orange;
+        }
+        .c1 {
+            color: white;
+            margin-top: 150px;
+        }
+        .c {
+            display: flex;
+            gap: 100px;
+            margin-left: 50px;
+            transition: transform 2s;
+        }
+        .c2 img {
+           border-radius: 50%;
+           width: 600px;
+           height: 600px;
+           object-fit: cover;
+           margin-left: 70px;
+          
+        }
+        .c2 img:hover {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+    <div class="a">
+       <h1><i class="fa-solid fa-utensils"></i>Restoran</h1>
+    </div>
+    <div class="b">
+        <ul>
+            <a href="home" style="color: orange;">HOME</a>
+            <a href="about">ABOUT</a>
+            <a href="service">SERVICE</a>
+            <a href="menu">MENU</a>
+            <a href="pages">PAGES</a>
+            <a href="contact">CONTACT</a>
+            <button>BOOK A TABLE</button>
+        </ul>
+    </div>
+    </nav>
+    <div class="c">
+        <div class="c1">
+        <h1>Enjoy OUR<br>Delicious Meal</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium sunt asperiores aperiam sint <br>adipisci dignissimos dolorum magni eaque mollitia hic dolorem, ipsum accusamus iste laborio<br> inventore debitis.
+        Nostrum, quib</p>
+        <button>BOOK A TABLE</button>
+        </div>
+        <div class="c2">
+            <img src="grill.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

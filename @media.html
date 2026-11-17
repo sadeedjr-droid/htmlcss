@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top {
+            background-color: blue;
+            height: 200px;
+            width: 100%;
+        }
+        .bottom {
+            background-color: violet;
+            height: 200px;
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        .l1 {
+            margin-top: 10px;
+            background-color: blue;
+            height: 50px;
+            width: 150px;
+        }
+        .right {
+            height: 500px;
+            width: 150px;
+            background-color: blue;
+        }
+        .middle {
+            display: flex;
+            gap: 1000px;
+            margin-top: 10px;
+        }
+        @media (max-width:1000px) {
+            .middle {
+                flex-direction: column;
+            }
+            .right {
+                height: 200px;
+                width: 100%;
+            }
+        }
+        @media (max-width:500px) {
+            .l1 {
+                height: 200px;
+                width: 100%;
+            }
+            .right {
+                margin-top: -50px;
+
+            }
+            .bottom {
+                margin-top: -20px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="top">
+
+    </div>
+    <div class="middle">
+        <div class="left">
+           <div class="l1"></div>
+           <div class="l1"></div>
+           <div class="l1"></div>
+        </div>
+        <div class="right">
+
+        </div>
+
+    </div>
+    <div class="bottom">
+
+    </div>
+</body>
+</html>

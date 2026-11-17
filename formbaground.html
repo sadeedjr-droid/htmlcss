@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  body {
+    background-image: url('laptop1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .a {
+    width: 350px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 50px;
+    margin: 50px auto ;
+    border-radius: 10px;
+  }
+  h2 {
+    text-align: center;
+  }
+  input {
+    width: 100%;
+    border-radius: 10px;
+  }
+</style>
+<body>
+    <div class="a">
+    <h2>Student Registration</h2>
+    <form>
+        <label>First Name</label><br>
+        <input type="text" name="name" placeholder="Enter your first name" required><br>
+        <label>Last Name</label><br>
+        <input type="text" name=" last name" placeholder="Enter your last name" required><br>
+        <label>Email Address</label><br>
+        <input type="email" name="email" placeholder="Enter your E-mail" required><br>
+        <label>Contact Number</label><br>
+        <input type="text" name="phone" min="10" max="10" placeholder="Enter your mobile number" required><br>
+        <label>Password</label>
+        <input type="password" name="password" pattern="[A-Z]{1}[a-z][6][0-9]{5}" title="includes an uppercase and lowercase followed by numbers" min="8" placeholder="Enter your password"><br>
+        <label>Confirm Password</label><br>
+        <input type="password" name="confirm password" pattern="[A-Z]{1}[a-z][6][0-9]{5}" title="includes an uppercase and lowercase followed by numbers" min="8" placeholder="Enter confirm password"><br>
+        <button type="submit">Register</button>
+    </form>
+    </div>
+</body>
+</html>

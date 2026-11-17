@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a {
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+        }
+        .b {
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+            transition: transform 2s;
+        }
+        .b:hover{
+            transform: rotate(360deg);
+        }
+        .c {
+            background-color: blue;
+             height: 200px;
+            width: 200px;
+
+        }
+        .c:hover{
+            transform: scale(1.2);
+        }
+        .z {
+            display: flex;
+            gap: 20px;
+        }
+        .d {
+              background-color: blue;
+             height: 200px;
+            width: 200px;
+
+        }
+        .d:hover{
+            transform: translate(20px,30px);
+        }
+        .e {
+              background-color: blue;
+             height: 200px;
+            width: 200px;
+        }
+        .e:hover{
+            transform: skew(60deg,80deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="z">
+    <div class="a">
+        <h2>normal</h2>
+    </div>
+    <div class="b">
+        <h2>rotate</h2>
+    </div>
+    <div class="c">
+        <h2>scale</h2>
+    </div>
+    <div class="d">
+        <h2>translate</h2>
+    </div>
+    <div class="e">
+        <h2>skew</h2>
+    </div>
+    </div>
+</body>
+</html>
